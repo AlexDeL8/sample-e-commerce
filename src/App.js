@@ -1,11 +1,17 @@
 import "./App.css";
-import MainContent from "../src/components/main_content/MainContent.js";
+
+import React from "react";
+
+import Header from "../src/components/header/Header.js";
+import PageContent from "../src/components/page_content/PageContent.js";
 
 function App() {
   return (
     <>
-      <h1 data-testid="sample-header">Sample E-Commerce</h1>
-      {/* <MainContent /> */}
+      <div data-testid="app-div">
+        <Header />
+        <PageContent />
+      </div>
     </>
   );
 }

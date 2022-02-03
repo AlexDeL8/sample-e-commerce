@@ -1,8 +1,8 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import App from "./App";
 
-test('renders basic h1 tag', () => {
+test("renders App div", () => {
   render(<App />);
-  const linkElement = screen.getByTestId("sample-header");
-  expect(linkElement).toBeInTheDocument();
+  const appDivElement = screen.getByTestId("app-div");
+  expect(appDivElement).toBeInTheDocument(); //
 });
