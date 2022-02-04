@@ -1,4 +1,4 @@
-import "header.sass";
+import "./header.sass";
 
 import React from "react";
 
