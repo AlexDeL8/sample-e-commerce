@@ -1,4 +1,58 @@
+$main-purple: rgb(70, 30, 145)
+$secondary-peach: rgb(250, 110, 95)
 .SearchNav
     display: flex
     flex-direction: row
     justify-content: space-around
+    align-content: flex-end
+    align-items: baseline
+    background-color: rgb(70, 70, 70)
+    color: white
+    padding: 18px 0px
+    font-size: 16px
+
+#search-nav-logo
+    flex: 1
+    text-align: center
+
+#search-nav-logo-icon
+    color: $main-purple
+    font-weight: bold
+    font-size: 1.5em
+
+#search-nav-logo-text
+    color:
+    font-size: 1.3em
+
+#search-nav-search
+    flex: 5
+
+#searchbar
+    width: 90%
+    padding: 9px 0px 9px 8px
+    border-top-left-radius: 5px
+    border-bottom-left-radius: 5px
+
+#searchbar-button
+    background-color: $secondary-peach
+    font-weight: bold
+    padding: 9px 3px 10px 3px
+    border-top-right-radius: 5px
+    border-bottom-right-radius: 5px
+
+#searchbar-button:hover
+    cursor: pointer
+
+#search-nav-infos
+    flex: 2
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    column-gap: 0px
+
+.SearchNavInfo
+    font-weight: bold
+
+.SearchNavInfo:hover
+    cursor: pointer
+    text-decoration: underline
