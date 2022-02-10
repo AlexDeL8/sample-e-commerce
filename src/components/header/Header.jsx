@@ -6,7 +6,7 @@ import MainNav from "./MainNav.jsx";
 
 const Header = () => {
   return (
-    <div data-testid="header-div">
+    <div data-testid="header-div" className="Header">
       <SearchNav />
       <MainNav />
     </div>
