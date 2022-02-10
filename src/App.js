@@ -2,8 +2,8 @@ import "./App.css";
 
 import React from "react";
 
-import Header from "../src/components/header/Header.js";
-import PageContent from "../src/components/page_content/PageContent.js";
+import Header from "../src/components/header/Header.jsx";
+import PageContent from "../src/components/page_content/PageContent.jsx";
 
 function App() {
   return (

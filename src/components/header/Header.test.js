@@ -1,5 +1,5 @@
 import { cleanup, render, screen } from "@testing-library/react";
-import Header from "./Header.js";
+import Header from "./Header.jsx";
 
 afterEach(() => {
   cleanup();

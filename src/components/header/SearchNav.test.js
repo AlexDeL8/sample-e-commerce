@@ -1,5 +1,5 @@
 import { cleanup, render, screen } from "@testing-library/react";
-import SearchNav from "./SearchNav.js";
+import SearchNav from "./SearchNav.jsx";
 
 afterEach(() => {
   cleanup();

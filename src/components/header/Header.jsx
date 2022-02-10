@@ -1,9 +1,8 @@
-import "./header.sass";
-
 import React from "react";
 
-import SearchNav from "./SearchNav.js";
-import MainNav from "./MainNav.js";
+import "./header.sass";
+import SearchNav from "./SearchNav.jsx";
+import MainNav from "./MainNav.jsx";
 
 const Header = () => {
   return (
