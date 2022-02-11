@@ -6,6 +6,7 @@ $secondary-peach: rgb(250, 110, 95)
     justify-content: space-around
     align-content: flex-end
     align-items: baseline
+    column-gap: 25px
     background-color: rgb(70, 70, 70)
     color: white
     padding: 18px 0px
@@ -21,19 +22,21 @@ $secondary-peach: rgb(250, 110, 95)
     font-size: 1.5em
 
 #search-nav-logo-text
-    color:
     font-size: 1.3em
 
 #search-nav-search
     flex: 5
+    display: flex
+    flex-direction: row
 
 #searchbar
-    width: 90%
+    flex: 9
     padding: 9px 0px 9px 8px
     border-top-left-radius: 5px
     border-bottom-left-radius: 5px
 
 #searchbar-button
+    flex: 1
     background-color: $secondary-peach
     font-weight: bold
     padding: 9px 3px 10px 3px
