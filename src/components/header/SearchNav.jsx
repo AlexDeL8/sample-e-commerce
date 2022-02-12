@@ -1,7 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import styled from "styled-components";
 
 import "./search_nav.sass";
+
+const linkStyle = {
+  textDecoration: "none"
+};
 
 const SearchNav = () => {
   return (
@@ -11,12 +16,12 @@ const SearchNav = () => {
       * Logo+Name/Home link - Search Bar - Icon+Store/Location - Icon+Profile - Icon+Cart
       * ^ These probably SHOULD be broken up into their own components
       */}
-      <Link to="/">
-        <div id="search-nav-logo" data-testid="search-nav-logo">
+      <div id="search-nav-logo" data-testid="search-nav-logo">
+        <Link to="/" style={linkStyle}>
           <span id="search-nav-logo-icon">&gt;./</span>
           <span id="search-nav-logo-text">sample</span>
-        </div>
-      </Link>
+        </Link>
+      </div>
       <div id="search-nav-search">
         <input id="searchbar" type="text" placeholder="Search products" data-testid="searchbar"/>
         <button id="searchbar-button"/*type="submit"/</div>*/>Search</button>
