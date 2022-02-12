@@ -4,9 +4,9 @@ import styled from "styled-components";
 
 import "./search_nav.sass";
 
-const linkStyle = {
-  textDecoration: "none"
-};
+const StyledLink  = styled(Link)`
+  text-decoration: none;
+`
 
 const SearchNav = () => {
   return (
@@ -17,13 +17,13 @@ const SearchNav = () => {
       * ^ These probably SHOULD be broken up into their own components
       */}
       <div id="search-nav-logo" data-testid="search-nav-logo">
-        <Link to="/" style={linkStyle}>
+        <StyledLink to="/">
           <span id="search-nav-logo-icon">&gt;./</span>
           <span id="search-nav-logo-text">sample</span>
-        </Link>
+        </StyledLink>
       </div>
       <div id="search-nav-search">
-        <input id="searchbar" type="text" placeholder="Search products" data-testid="searchbar"/>
+        <input id="searchbar" type="text" placeholder="Search >./sample..." data-testid="searchbar"/>
         <button id="searchbar-button"/*type="submit"/</div>*/>Search</button>
       </div>
       <div id="search-nav-infos" data-testid="search-nav-infos">

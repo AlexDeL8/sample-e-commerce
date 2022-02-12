@@ -1,16 +1,31 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import styled from "styled-components";
 
 import "./main_nav.sass";
 
+// const linkStyle = {
+//   textDecoration: "none"
+// };
+
+const StyledLink  = styled(Link)`
+  text-decoration: none;
+`
+
 const MainNav = () => {
   return (
-    <ul data-testid="main-nav-div">
-      <li><Link to="/products">All Products</Link></li>
-      <li><Link to="/products/deals">Latest Deals</Link></li>
-      <li><Link to="/services">Services</Link></li>
-      <li><Link to="/products/giftcard">Gift Cards</Link></li>
-    </ul>
+    <div className="MainNav" data-testid="main-nav-div">
+      <ul id="products-services-list" data-testid="products-services-list">
+        <li><StyledLink to="/products">All Products</StyledLink></li>
+        <li><StyledLink to="/products/deals">Latest Deals</StyledLink></li>
+        <li><StyledLink to="/services" >Services</StyledLink></li>
+        <li><StyledLink to="/products/giftcard" >Gift Cards</StyledLink></li>
+      </ul>
+      <ul id="profile-list" data-testid="profile-list">
+        <li><StyledLink to="/products/giftcard" >Recent Orders</StyledLink></li>
+        <li><StyledLink to="/products/giftcard" >Saved Items</StyledLink></li>
+      </ul>
+    </div>
   );
 };
 
