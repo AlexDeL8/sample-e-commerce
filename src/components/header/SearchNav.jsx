@@ -11,10 +11,12 @@ const SearchNav = () => {
       * Logo+Name/Home link - Search Bar - Icon+Store/Location - Icon+Profile - Icon+Cart
       * ^ These probably SHOULD be broken up into their own components
       */}
-      <div id="search-nav-logo" data-testid="search-nav-logo">
-        <span id="search-nav-logo-icon">&gt;./</span>
-        <span id="search-nav-logo-text">sample</span>
-      </div>
+      <Link to="/">
+        <div id="search-nav-logo" data-testid="search-nav-logo">
+          <span id="search-nav-logo-icon">&gt;./</span>
+          <span id="search-nav-logo-text">sample</span>
+        </div>
+      </Link>
       <div id="search-nav-search">
         <input id="searchbar" type="text" placeholder="Search products" data-testid="searchbar"/>
         <button id="searchbar-button"/*type="submit"/</div>*/>Search</button>

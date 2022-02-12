@@ -1,11 +1,12 @@
-import "./main_nav.sass";
-
 import React from "react";
+import { Link } from "react-router-dom";
+
+import "./main_nav.sass";
 
 const MainNav = () => {
   return (
     <div data-testid="main-nav-div">
-      <h1>=All</h1>
+      <Link to="/products">=All</Link>
     </div>
   );
 };
