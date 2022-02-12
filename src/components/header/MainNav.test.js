@@ -1,5 +1,5 @@
 import { cleanup, render, screen } from "@testing-library/react";
-import MainNav from "./MainNav.js";
+import MainNav from "./MainNav.jsx";
 
 afterEach(() => {
   cleanup();

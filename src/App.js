@@ -1,16 +1,25 @@
-import "./App.css";
-
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Header from "../src/components/header/Header.js";
-import PageContent from "../src/components/page_content/PageContent.js";
+import "./App.sass";
+import Header from "../src/components/header/Header.jsx";
+import MainPage from "./routes/page_content/main/MainPage.jsx";
+import Products from "./routes/page_content/products/Products.jsx";
+import Product from "./routes/page_content/products/Product.jsx";
 
 function App() {
   return (
     <>
       <div data-testid="app-div">
-        <Header />
-        <PageContent />
+        <BrowserRouter>
+          <Header />
+          <Routes>
+            <Route path="/" element={<MainPage />} />
+            <Route path="products" element={<Products />}>
+              <Route path=":productId" element={<Product />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
       </div>
     </>
   );
