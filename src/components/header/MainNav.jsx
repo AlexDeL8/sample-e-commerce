@@ -18,12 +18,12 @@ const MainNav = () => {
       <ul id="products-services-list" data-testid="products-services-list">
         <li><StyledLink to="/products">All Products</StyledLink></li>
         <li><StyledLink to="/products/deals">Latest Deals</StyledLink></li>
-        <li><StyledLink to="/services" >Services</StyledLink></li>
-        <li><StyledLink to="/products/giftcard" >Gift Cards</StyledLink></li>
+        <li><StyledLink to="/products/product/giftcard" >Gift Cards</StyledLink></li>
+        <li><StyledLink to="/memberships" >Memberships</StyledLink></li>
       </ul>
       <ul id="profile-list" data-testid="profile-list">
-        <li><StyledLink to="/products/giftcard" >Recent Orders</StyledLink></li>
-        <li><StyledLink to="/products/giftcard" >Saved Items</StyledLink></li>
+        <li><StyledLink to="/profile/recent-orders" >Recent Orders</StyledLink></li>
+        <li><StyledLink to="/profile/saved-items" >Saved Items</StyledLink></li>
       </ul>
     </div>
   );
