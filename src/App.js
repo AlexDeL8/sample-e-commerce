@@ -9,7 +9,6 @@ import ProductPreview from "./routes/products/ProductPreview.jsx";
 import Giftcards from "./routes/products/giftcards/Giftcards.jsx";
 import Memberships from "./routes/memberships/Memberships.jsx";
 
-
 function App() {
   return (
     <>
@@ -19,11 +18,10 @@ function App() {
           <Routes>
             <Route path="/" element={<MainPage />} />
             <Route path="products/" element={<Products />}>
-              <Route path=":productId/" element={<ProductPreview />} />
-              <Route path="giftcards/" element={<Giftcards />} />
+              <Route path=":productId" element={<ProductPreview />} />
+              <Route path="giftcards" element={<Giftcards />} />
             </Route>
-            <Route path="memberships/" element={<Memberships />}>
-            </Route>
+            <Route path="memberships/" element={<Memberships />}></Route>
           </Routes>
         </BrowserRouter>
       </div>
