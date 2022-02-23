@@ -1,7 +1,11 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { createStore } from "redux";
+import { Provider } from "react-redux";
 
 import "./App.sass";
+import reducer from "./store/reducer";
+
 import Header from "../src/components/header/Header.jsx";
 import MainPage from "./routes/main/MainPage.jsx";
 import Products from "./routes/products/Products.jsx";
